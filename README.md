@@ -105,6 +105,32 @@ Non-goals:
 - Does not implement configurable quiet hours, snooze, or other optional
   take-home features.
 
+## Running the Tests
+
+```sh
+npm test
+```
+
+Runs the policy and runtime suites with the Node built-in test runner. All
+tests use a simulated clock and a controllable timer; none wait for real time.
+
+## Trying the Extension in Pi
+
+Load only the extension entry point, then use the manual preview command:
+
+```sh
+pi --extension ./src/reminder.ts
+```
+
+Inside the session:
+
+```text
+/bedtime-test
+```
+
+`/bedtime-test` shows the reminder on demand and never changes automatic
+reminder state.
+
 ## Testing Expectations
 
 - Tests use **simulated time**: a supplied or injected clock and a controllable
