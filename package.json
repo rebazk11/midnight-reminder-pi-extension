@@ -1,0 +1,10 @@
+{
+  "name": "midnight-reminder-pi-extension",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Midnight Reminder Pi extension",
+  "scripts": {
+    "test": "node --test tests/"
+  }
+}
